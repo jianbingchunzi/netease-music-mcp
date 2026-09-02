@@ -13,7 +13,7 @@ from http.server import HTTPServer
 # --- Configuration ---
 NETEASE_COOKIE = os.environ.get("NETEASE_COOKIE", "")
 NETEASE_CSRF = os.environ.get("NETEASE_CSRF", "")
-   PORT = int(os.environ.get("PORT", os.environ.get("MCP_PORT", "3456")))
+PORT = int(os.environ.get("PORT", os.environ.get("MCP_PORT", "3456")))
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
 SESSION_ID = str(uuid.uuid4())
 
